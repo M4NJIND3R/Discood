@@ -26,7 +26,7 @@
         <ul class="userList">
             <p class="userListHead"><b>DIRECT MESSAGES</b></p>
             {{#each friends}}
-                 {{#if (isEqual ../user.username this.username)}}
+                {{#if (isEqual ../user.username this.username)}}
                 <li class="friend" onclick="changeEmbedSrc('{{this.username}}')">
                     <img src="data:image/jpeg;base64,{{this.dp}}" alt="user display pic">
                     <h3>{{this.username}}</h3>
@@ -39,6 +39,7 @@
             <img src="data:image/jpeg;base64,{{user.dp}}" alt="user display pic">
             <h3>{{user.username}}</h3>
             <a class="logout" href="/logout">Logout</a>
+            <a id="refresh" class="logout" href="" onclick="getSrc">Refresh</a>
         </div>
 
 
