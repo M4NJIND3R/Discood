@@ -1,0 +1,49 @@
+<div class="ddContainer">
+    <div class="groups">
+        <p class="brandName"><b>Discood</b></p>
+        <ul class="groupsList">
+            <li><img class="groupPic" src="/images/gp0.png" alt=""></li>
+            <hr width="60%">
+            <li><img class="groupPic" src="/images/gp1.png" alt=""></li>
+            <li><img class="groupPic" src="/images/gp2.png" alt=""></li>
+            <li><img class="groupPic" src="/images/gp3.png" alt=""></li>
+            <li><img class="groupPic" src="/images/gp4.png" alt=""></li>
+            <li><img class="groupPic" src="/images/gp5.png" alt=""></li>
+            <li><img class="groupPic" src="/images/gp6.png" alt=""></li>
+            <li><img class="groupPic" src="/images/gp7.png" alt=""></li>
+            <li><img class="groupPic" src="/images/gp8.png" alt=""></li>
+            <li><img class="groupPic" src="/images/gp9.png" alt=""></li>
+            <li><img class="groupPic" src="/images/gp10.png" alt=""></li>
+        </ul>
+    </div>
+
+    <header class="users">
+        
+        <div class="searchOption">
+            <p>Find or start a conversation</p>
+        </div>
+
+        <ul class="userList">
+            <p class="userListHead"><b>DIRECT MESSAGES</b></p>
+            {{#each friends}}
+                 {{#if (isEqual ../user.username this.username)}}
+                <li class="friend" onclick="changeEmbedSrc('{{this.username}}')">
+                    <img src="data:image/jpeg;base64,{{this.dp}}" alt="user display pic">
+                    <h3>{{this.username}}</h3>
+                </li>
+                {{/if}}
+            {{/each}}
+        </ul>
+
+        <div class="ownerUser">
+            <img src="data:image/jpeg;base64,{{user.dp}}" alt="user display pic">
+            <h3>{{user.username}}</h3>
+            <a class="logout" href="/logout">Logout</a>
+        </div>
+
+
+    </header>
+
+    <embed id="chatHistory" class="chatHistoryEmbed" src="/discood/{{friends.0.username}}" width="800" height="900" type="">
+
+</div>

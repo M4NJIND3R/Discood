@@ -1,0 +1,1 @@
+//window dimentions: width:1879 height: 918.969

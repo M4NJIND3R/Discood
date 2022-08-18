@@ -1,0 +1,36 @@
+<div class="form-head">
+    <h1>{{title}}</h1>
+</div>
+
+<form method="post">
+    <fieldset class="form-group">
+        <label for="username" class="col-2 control-label">Username: *</label>
+        <input name="username" id="username" required  placeholder="email@email.com" />
+        {{!-- type="email" --}}
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label for="password" class="col-2 control-label">Password: *</label>
+        <input name="password" id="password" type="password" required   />
+        {{!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" --}}
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label for="confirm" class="col-2 control-label">Confirm: *</label>
+        <input name="confirm" id="confirm" type="password" required   />
+        {{!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" --}}
+    </fieldset>
+
+    <div class="btns">
+
+    <div class="btn-group">
+      <button class="btn-submit">Register</button>
+      <a class="btn-github" href="/github">gitHub login</a>
+    </div>
+
+    <div class="register-group">
+      Already have an account?  <a href="/login" title="Login">Login</a>
+    </div>
+
+  </div>
+</form>

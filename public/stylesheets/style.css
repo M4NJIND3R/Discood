@@ -1,0 +1,237 @@
+body {
+  margin: 0 !important;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  background-color: #202225;
+  color:#a3a6aa;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.ddContainer{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.brandName{
+  color: #a3a6aa;
+  margin-top: 0;
+}
+
+.groups{
+  background-color: #202225;
+  padding: 1.2vh;
+  padding-top: 0.6vh;
+}
+
+.groupPic{
+  padding-left: 0.5vh;
+}
+
+hr{
+  border: solid 1.5px #a3a6aa;
+  border-radius: 2px;
+}
+
+.users{
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  width: 27vh;
+  background-color: #2f3136;
+  border-radius: 0.6vh;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  color: #96989d;
+}
+
+.searchOption{
+  padding: 1.4vh;
+  box-shadow: 0px 0px 0vh 0.15vh #202225;
+  font-size: 1.4vh;
+}
+
+.searchOption> p{
+  background-color: #202225;
+  padding: 0.6vh;
+  color:#a3a6aa;
+  margin: 0;
+}
+
+.userListHead{
+  color: #a3a6aa;
+  margin: 1vh 0;
+  font-size: 1.25vh;
+  padding: 0vh 1.8vh; 
+}
+
+.userList{
+  /* padding: 0vh 1.8vh; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: calc(100vh - 122*px);
+  overflow-y: auto;
+  
+}
+
+.userList> li> h3{
+  margin: 0;
+  margin-top: 1vh;
+}
+
+.friend{
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  padding: 0.3rem 1.8vh;
+}
+
+.friend:hover{
+  background-color: #3c3f45;
+}
+
+.friend > img{
+  width: 4vh;
+  height: 4vh;
+  border-radius: 100vh;
+}
+
+.ownerUser{
+  padding: 0.8vh 1.8vh;
+  margin-top: auto;
+  display: flex ;
+  flex-direction: row;
+  background-color: #292b2f;
+}
+
+.ownerUser> img{
+  width: 4vh;
+  height: 4vh;
+  border-radius: 100vh;
+}
+
+.ownerUser> h3{
+  margin: 0;
+  margin-top: 1vh;
+}
+
+.chatHistoryEmbed{
+  margin-top: 2vh;
+  /* box-shadow: 0px 0px 0.3vh 0.2vh #202225; */
+}
+  
+
+.chatHistory{
+  background-color: #36393f;
+  box-shadow: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chatHeader{
+  background-color: #36393f;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 0vh 0.15vh #202225;
+  padding: 0.3vh;
+  padding-left: 2vh;
+}
+
+.chatHeader > h2{
+  margin: 0;
+  margin-top: 1vh;
+}
+
+.searchOptionHeader{
+  padding: 1.25vh;
+  font-size: 1.4vh;
+  margin-left: auto;
+} 
+
+.searchOptionHeader> p{
+  background-color: #202225;
+  padding: 0.6vh;
+  color:#a3a6aa;
+  margin: 0;
+  width: 15vh;
+}
+
+.chats{
+  padding:2vh 0;
+  margin-top: auto;
+  height: calc(100vh);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chats > ul{
+  margin-top: auto;
+  word-wrap:break-word ;
+}
+
+.eachChat{
+  padding: 0.5vh 2vh;
+}
+
+.eachChat:hover{
+  background-color: #32353b;
+}
+
+.chatDescHeader{
+  display: flex;
+  flex-direction: row;
+  gap: 1vh
+}
+
+.senderName{
+  margin: 0;
+  font-size: 2.2vh;
+}
+
+.chatDate{
+  margin: 0;
+  margin-top: 0.6vh;
+  color:#a3a6aa;
+}
+
+.chatInCon{
+  margin: 3vh;
+  margin-top: 0;
+  padding: 1vh;
+  background-color:#40444b;
+}
+
+.chatIn{
+  padding: 0.5vh;
+  width: 80vh;
+  background-color: #40444b;
+  border: none;
+  color: white;
+}
+
+.chatIn:focus{
+  border:none;
+  outline: none;
+}
+
+.logout{
+  text-decoration: none;
+  color: white;
+  padding: 1vh;
+  border-radius: 0.4vh;
+  background-color: #202225;
+  margin-left: auto;
+}

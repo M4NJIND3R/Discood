@@ -1,0 +1,36 @@
+<main class="chatHistory">
+
+        <div class="chatHeader">
+            <h2>@ {{receiverName chats user.username}}</h2>
+            <div class="searchOptionHeader">
+                <p>Search</p>
+            </div>
+        </div>
+
+        <div class="chats" id="chats">
+            <ul>
+                {{#each chats}}
+                <li>
+                    <div class="eachChat">
+                        <div class="chatDescHeader">
+                            <h4 class="senderName">{{this.sender}}</h4>
+                            <p class="chatDate">{{toShortDate this.createDate}}</p>
+                        </div>
+                        <div>
+                            <p class="chatDesc">{{this.chatDescription}}</p>
+                        </div>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        <form class="chatInCon" method="post">
+            <input type="text" class="chatIn" id="chatDescription" name="chatDescription" placeholder="Message @{{receiverName chats user.username}}" required>
+            <button type="submit" hidden>Submit</button>
+        </form>
+</main>
+
+<script >
+    chats = document.getElementById('chats');
+    chats.scrollTop = chats.scrollHeight;
+</script>
