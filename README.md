@@ -9,8 +9,10 @@
 4. add description, author, main: 'main.js' and (inside scripts)start: 'electron .' in package.json
 6.done
 7. package up the app for distribution
-	npm install --save-dev @electron-forge/cli
-	npx electron-forge import
+
+		npm install --save-dev @electron-forge/cli
+		npm electron-forge import
+
 		✔ Checking your system
 		✔ Initializing Git Repository
 		✔ Writing modified package.json file
@@ -21,6 +23,6 @@
 		We have ATTEMPTED to convert your app to be in a format that electron-forge understands.
 
 		Thanks for using "electron-forge"!!!
-	npm run make
+		npm run make
 
 for menu bar, i recommend: https://dev.to/saisandeepvaddi/creating-a-custom-menu-bar-in-electron-1pi3
